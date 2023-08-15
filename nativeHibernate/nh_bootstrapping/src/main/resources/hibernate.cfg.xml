@@ -1,0 +1,25 @@
+<!-- Create sessionFactory using xml method -->
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-configuration PUBLIC
+    "-//Hibernate/Hibernate Configuration DTD//EN"
+    "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+    <session-factory>
+
+        <!-- general configuration -->
+        <property name = "hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
+
+        <!-- Database connection -->
+        <property name = "hibernate.connection.driver_class">com.mysql.cj.jdbc.Driver</property>
+        <property name="hibernate.connection.url">jdbc:mysql://localhost/ijseNh_Db?createDatabaseIfNotExist=true</property>
+        <property name="hibernate.connection.username">root</property>
+        <property name="hibernate.connection.password"> </property>
+        
+        <!-- SQL statement logging -->
+        <property name="hibernate.show_sql">true</property>
+        <property name="hibernate.format_sql">true</property>
+		
+		<!-- Automatic schema generation -->
+		
+    </session-factory>
+</hibernate-configuration>
