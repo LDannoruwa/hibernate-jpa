@@ -15,7 +15,7 @@ import lombok.*;
 public class Pet {
     //Using @Embedded
     @Id
-	@Column(name = "pet_id")
+    @Column(name = "pet_id")
     private int id;
 
     @Column(name = "pet_name", nullable = false)
