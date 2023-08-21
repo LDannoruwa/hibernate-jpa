@@ -17,7 +17,7 @@ import java.util.List;
 @Table(name = "module") //To change/add table name
 public class Module {
     @Id
-	@Column(name = "module_code")
+    @Column(name = "module_code")
     private String code;
 
     @Column(nullable = false)
